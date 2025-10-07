@@ -87,6 +87,7 @@ public final class CSHAuthorizer: NSObject, ObservableObject, OIDAuthStateChange
         completion: @escaping () -> Void
     ) {
         if case .authorized = signInState {
+            completion()
             return
         }
 
